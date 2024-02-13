@@ -1,3 +1,463 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.navbar{
+  text-align: center;
+  background: radial-gradient(circle farthest-corner at 10% 20%, rgba(37, 130, 251, 0.98) 0.1%, rgb(81, 0, 128) 99.8%);
+  color: white;
+  padding: 20px;
+  border-radius: 0 0 50px 50px ;
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1; /* این ویژگی باعث می‌شود نوبار روی عکس قرار بگیرد */
+}
+
+.her {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* این ویژگی باعث می‌شود تصویر زمینه در جای خود ثابت بماند */
+    position: relative; /* افزودن position: relative برای .her */
+  }
+  ::-webkit-scrollbar {
+    width: 10px; /* عرض اسکرول‌بار */
+  }
+  
+  /* مسیر یا track اسکرول‌بار */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* رنگ پس‌زمینه‌ی مسیر */
+    border-radius: 10px; /* گوشه‌های گرد */
+  }
+  
+  /* دسته یا thumb اسکرول‌بار */
+  ::-webkit-scrollbar-thumb {
+    background: #e2bb58; /* رنگ دسته */
+    border-radius: 10px; /* گوشه‌های گرد */
+  }
+  /* وقتی ماوس روی دسته اسکرول‌بار قرار می‌گیرد */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #d19d1e; /* رنگ دسته در حالت hover */
+  }
+  
+.android:hover{
+    transform: translateY(-20px) rotateZ(-1.4deg) !important;
+}
+
+.windows{
+    position: relative;
+    width: 350px;
+    height: 480px;
+    background: rgba(255, 255, 255, 0.65);
+    border-radius: 20px;
+    box-shadow: -30px 30px 50px rgba(0,0,0,0.08);
+    padding: 10px;
+    transition: 0.7s ease;
+}
+
+.android{
+    position: relative;
+    width: 350px;
+    height: 480px;
+    background: rgba(255, 255, 255, 0.65);
+    border-radius: 20px;
+    box-shadow: -30px 30px 50px rgba(0,0,0,0.08);
+    padding: 10px;
+    transition: 0.7s ease;
+}
+
+
+.footer{
+    text-align: center;
+    background: radial-gradient( circle farthest-corner at 10% 20%, rgba(37, 130, 251, 0.98) 0.1%, rgb(81, 0, 128) 99.8% );
+    color: white;
+    padding: 20px;
+    border-radius: 40px 40px 0 0 ;
+}
+.footer i{
+    margin: 0 5px;
+    font-size: 19px;
+}
+
+.rang2{
+  
+  background: radial-gradient( circle farthest-corner at 10% 20%, rgba(37, 130, 251, 0.98) 0.1%, rgb(81, 0, 128) 99.8% );
+ 
+}
+#particles-js {
+  position: absolute;
+ 
+}
+
+/*سکشن سوم
+*/
+
+.timeline li {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.timeline li.active {
+  opacity: 1;
+}
+
+
+
+
+/*سکشن چهارم
+*/
+.social{
+  background: rgba(0, 0, 0, 0.45);
+  position: fixed;
+  top: 30%;
+  bottom:0;
+  left: 0;
+  padding: 10px;
+  border-radius: 40px;
+  margin: 20px;
+  height: 270px;
+  text-align: center;
+  box-shadow: -30px 30px 50px rgba(0,0,0,0.1);
+
+  font-size: 40px;
+  z-index: 1;
+  vertical-align: middle;
+}
+.backtotop{
+  position: fixed;
+  width: 60px;
+  text-align: center;
+  justify-content: center;
+  height: 50px;
+  top: 87%;
+  color: #00a6ff;
+  z-index: 1;
+  margin: 20px;
+  padding-bottom: 10px;
+  font-size: 55px;
+}
+.backtotop a i{
+  color: #5500ff;
+}
+.backtotop i{
+  transition: 0.5s;
+}
+
+.backtotop i:hover{
+  color: #00be1a;
+}
+.social span{
+  font-size: 19px;
+  position: absolute;
+  color: white;
+  box-shadow: -30px 30px 50px rgba(0,0,0,0.5);
+  background: #3d95ff;
+  padding: 6px 20px;
+  border-radius: 40px;
+  margin: 10px 0;
+  z-index: 1;
+  left: 2px;
+  opacity: 0;
+  transition: 0.5s ease;
+
+}
+.askmotion2{
+  width: 100%;
+  display: none;
+}
+.social a:hover span{
+  opacity: 1;
+  margin-left: 80px;
+}
+.social a i{
+  transition: 0.4s ease;
+}
+.social a:hover i{
+  transform: scale(1.2);
+}
+.fa-globe{
+  color: white;
+}
+.fa-discord{
+  color: #8726d6e7;
+}
+.fa-telegram-plane{
+  color: #0077ff;
+}
+.fa-instagram{
+  color: deeppink;
+}
+.fa-youtube{
+  color: red;
+}
+#preloader{
+  background: #000 no-repeat center center;
+  background-size: 10%;
+  height:100%;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+#sidenav{
+  display: none;
+}
+.icon-row {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-around; /* Distribute items evenly */
+  align-items: center; /* Center items vertically */
+  margin-top: 20px; /* Add some margin */
+}
+
+/* Optional: Adjust size of icons */
+.icon-row i {
+  font-size: 24px; /* Set font size to 24 pixels */
+}
+/* Define colors for each icon */
+#speed-icon {
+  color: #ff0000; /* Red color for the speed icon */
+}
+
+#quality-icon {
+  color: #00ff00; /* Green color for the quality icon */
+}
+
+#responsiveness-icon {
+  color: #4a4ad3; /* Blue color for the responsiveness icon */
+}
+
+
+
+/*دکمه ها
+*/
+:root {
+	--clr-neon: rgba(235, 97, 143, 1);
+	--clr-bg: rgb(255, 254, 254);
+	--clr-white: rgba(255, 255, 255, 1);
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+
+
+.d-1 {
+	font-size: 2em;
+
+	display: inline-block;
+	cursor: pointer;
+	text-decoration: none;
+	color: var(--clr-neon);
+	border: var(--clr-neon) 4px solid;
+	padding: 0.25em 1em;
+	border-radius: 0.25em;
+
+	text-shadow: 0 0 0.125em rgba(255, 255, 255, 0.55), 0 0 0.5em currentColor;
+
+	box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+
+	position: relative;
+}
+
+.d-1::before {
+	pointer-events: none;
+	content: "";
+	position: absolute;
+	background: var(--clr-neon);
+	top: 120%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	transform: perspective(1.2em) rotateX(40deg) scale(1.5, 0.5);
+	filter: blur(1.15em);
+	opacity: 0.7;
+
+	transition: transform 0.5s linear;
+}
+
+.d-1::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	box-shadow: 0 0 4em 0.6em var(--clr-neon), 0 0 1em 0.2em var(--clr-white);
+	opacity: 0;
+	background: var(--clr-neon);
+	z-index: -1;
+	transition: opacity 0.5s linear;
+}
+
+.d-1:hover,
+.d-1:focus {
+	color: var(--clr-bg);
+	text-shadow: none;
+}
+
+.d-1:hover::before,
+.d-1:focus::before {
+	opacity: 1;
+	transform: perspective(1em) rotateX(40deg) scale(1.5, 0.6);
+	transition: transform 0.5s linear;
+}
+
+.d-1:hover::after,
+.d-1:focus::after {
+	opacity: 1;
+}
+
+
+/*باتن دوم
+*/
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 120px;
+  background: #27282c;
+}
+
+.button {
+  position: relative;
+  padding: 16px 30px;
+  font-size: 1.5rem;
+  color: var(--color);
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  text-shadow: 0 0 15px var(--color);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.button:hover {
+  color: #fff;
+  border: 2px solid rgba(0, 0, 0, 0);
+  box-shadow: 0 0 0px var(--color);
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color);
+  z-index: -1;
+  transform: scale(0);
+  transition: 0.5s;
+}
+
+.button:hover::before {
+  transform: scale(1);
+  transition-delay: 0.5s;
+  box-shadow: 0 0 10px var(--color),
+    0 0 30px var(--color),
+    0 0 60px var(--color);
+}
+
+.button span {
+  position: absolute;
+  background: var(--color);
+  pointer-events: none;
+  border-radius: 2px;
+  box-shadow: 0 0 10px var(--color),
+    0 0 20px var(--color),
+    0 0 30px var(--color),
+    0 0 50px var(--color),
+    0 0 100px var(--color);
+  transition: 0.5s ease-in-out;
+  transition-delay: 0.25s;
+}
+
+.button:hover span {
+  opacity: 0;
+  transition-delay: 0s;
+}
+
+.button span:nth-child(1),
+.button span:nth-child(3) {
+  width: 40px;
+  height: 4px;
+}
+
+.button:hover span:nth-child(1),
+.button:hover span:nth-child(3) {
+  transform: translateX(0);
+}
+
+.button span:nth-child(2),
+.button span:nth-child(4) {
+  width: 4px;
+  height: 40px;
+}
+
+.button:hover span:nth-child(1),
+.button:hover span:nth-child(3) {
+  transform: translateY(0);
+}
+
+.button span:nth-child(1) {
+  top: calc(50% - 2px);
+  left: -50px;
+  transform-origin: left;
+}
+
+.button:hover span:nth-child(1) {
+  left: 50%;
+}
+
+.button span:nth-child(3) {
+  top: calc(50% - 2px);
+  right: -50px;
+  transform-origin: right;
+}
+
+.button:hover span:nth-child(3) {
+  right: 50%;
+}
+
+.button span:nth-child(2) {
+  left: calc(50% - 2px);
+  top: -50px;
+  transform-origin: top;
+}
+
+.button:hover span:nth-child(2) {
+  top: 50%;
+}
+
+.button span:nth-child(4) {
+  left: calc(50% - 2px);
+  bottom: -50px;
+  transform-origin: bottom;
+}
+
+.button:hover span:nth-child(4 ) {
+  bottom: 50%;
+}
+
+
