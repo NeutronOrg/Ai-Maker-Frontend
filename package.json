@@ -7,7 +7,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "npx tailwindcss -i ./src/input.css -o ./public/css/output.css --watch"
+    "start": "npx tailwindcss -i ./src/input.css -o ./public/css/output.css --watch",
+    "dev": "npx tailwindcss -i ./src/input2.css -o ./public/css/output2.css --watch",
+    "chat":"npx tailwindcss -i ./src/input3.css -o ./public/css/output3.css --watch"
   },
   "keywords": [],
   "author": "",
