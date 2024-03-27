@@ -2317,6 +2317,18 @@ html {
   border-end-end-radius: 0px;
 }
 
+.fixed {
+  position: fixed;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
 .right-1 {
   right: 0.25rem;
 }
@@ -2349,10 +2361,6 @@ html {
   margin-top: 0.75rem;
 }
 
-.mt-32 {
-  margin-top: 8rem;
-}
-
 .mt-4 {
   margin-top: 1rem;
 }
@@ -2363,10 +2371,6 @@ html {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mt-24 {
-  margin-top: 6rem;
 }
 
 .inline-block {
@@ -2401,10 +2405,6 @@ html {
   min-height: 100vh;
 }
 
-.w-10\/12 {
-  width: 83.333333%;
-}
-
 .w-16 {
   width: 4rem;
 }
@@ -2415,6 +2415,10 @@ html {
 
 .w-52 {
   width: 13rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .max-w-md {
@@ -2443,6 +2447,10 @@ html {
 
 .rounded-box {
   border-radius: var(--rounded-box, 1rem);
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .bg-base-100 {
@@ -2496,6 +2504,11 @@ html {
   padding-right: 5rem;
 }
 
+.px-24 {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -2509,6 +2522,11 @@ html {
 .py-40 {
   padding-top: 10rem;
   padding-bottom: 10rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .pt-4 {
@@ -2610,7 +2628,13 @@ html {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-body{
+@font-face {
+  font-family: 'MyFont';
+
+  src: url('../font/sans.woff2') format('woff2');
+}
+
+body {
   min-height: 100vh;
   background: linear-gradient(to bottom, #0a081d, #2c295c, #1d1d31);
   font-family: MyFont !important;
@@ -2633,37 +2657,6 @@ body{
 
 .custom-shape-divider-top-1710079344 .shape-fill {
   fill: #5F4194;
-}
-
-/* برای عرض‌های کوچکتر از ۶۸۰ پیکسل */
-
-@media only screen and (max-width: 680px) {
-  footer {
-    position:relative;
-    top: 10rem;
-  }
-}
-
-/* برای عرض‌های بین ۶۸۱ تا ۹۹۹ پیکسل */
-
-@media only screen and (min-width: 681px) and (max-width: 999px) {
-  footer {
-    position:relative;
-    top: 1rem;
-  }
-}
-
-/* برای عرض‌های بزرگتر از ۱۰۰۰ پیکسل */
-
-@media only screen and (min-width: 1000px) {
-  footer{
-    top: 12rem;
-  }
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-  /* عرض اسکرول‌بار */
 }
 
 /* مسیر یا track اسکرول‌بار */
@@ -2897,20 +2890,12 @@ body{
 }
 
 @media (min-width: 768px) {
-  .md\:mt-96 {
-    margin-top: 24rem;
-  }
-
   .md\:text-end {
     text-align: end;
   }
 }
 
 @media (min-width: 1024px) {
-  .lg\:mt-40 {
-    margin-top: 10rem;
-  }
-
   .lg\:flex {
     display: flex;
   }
@@ -2919,5 +2904,3 @@ body{
     display: none;
   }
 }
-
-  

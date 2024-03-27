@@ -2,79 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-  
-    min-height: 100vh;
-    background: linear-gradient(to bottom, #0a081d, #2c295c, #1d1d31);
-    font-family: MyFont !important;
-    
-  }
+@font-face {
+  font-family: 'MyFont';
+  src: url('../font/sans.woff2') format('woff2');
+}
+
+
+body {
+ 
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #0a081d, #2c295c, #1d1d31);
+  font-family: MyFont !important;
+
+}
+
 .custom-shape-divider-top-1710079344 {
-    
-    top: 0;
-    left: 0;
-    width: 100%;
-   overflow-x: hidden;
-    line-height: 0;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow-x: hidden;
+  line-height: 0;
 }
 
 .custom-shape-divider-top-1710079344 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 194px;
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 194px;
 }
 
 .custom-shape-divider-top-1710079344 .shape-fill {
-    fill: #5F4194;
+  fill: #5F4194;
 }
 
-/* برای عرض‌های کوچکتر از ۶۸۰ پیکسل */
-@media only screen and (max-width: 680px) {
-    footer {
-     
-        position:relative;
-        top: 10rem;
-   
-    }
- 
+
+/* مسیر یا track اسکرول‌بار */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  /* رنگ پس‌زمینه‌ی مسیر */
+  border-radius: 10px;
+  /* گوشه‌های گرد */
 }
 
-  
-  /* برای عرض‌های بین ۶۸۱ تا ۹۹۹ پیکسل */
-  @media only screen and (min-width: 681px) and (max-width: 999px) {
-    footer {
-     
-        position:relative;
-        top: 1rem;
-    }
-  }
-  
-  /* برای عرض‌های بزرگتر از ۱۰۰۰ پیکسل */
-  @media only screen and (min-width: 1000px) {
-    footer{
-      top: 12rem;
-    }
-  }
-  ::-webkit-scrollbar {
-    width: 10px; /* عرض اسکرول‌بار */
-  }
-  
-  /* مسیر یا track اسکرول‌بار */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; /* رنگ پس‌زمینه‌ی مسیر */
-    border-radius: 10px; /* گوشه‌های گرد */
-  }
-  
-  /* دسته یا thumb اسکرول‌بار */
-  ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
-    border-radius: 10px; /* گوشه‌های گرد */
-  }
-  /* وقتی ماوس روی دسته اسکرول‌بار قرار می‌گیرد */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #433d81; /* رنگ دسته در حالت hover */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* اندازه و رنگ سایه */
+/* دسته یا thumb اسکرول‌بار */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+  border-radius: 10px;
+  /* گوشه‌های گرد */
 }
 
-  
+/* وقتی ماوس روی دسته اسکرول‌بار قرار می‌گیرد */
+::-webkit-scrollbar-thumb:hover {
+  background: #433d81;
+  /* رنگ دسته در حالت hover */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  /* اندازه و رنگ سایه */
+}
